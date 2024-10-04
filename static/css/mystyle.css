@@ -1,0 +1,108 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d4d4d4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #4d88b3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+  padding: 40px;
+  background-color: #e6e6e6;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-position: inside; /* Ensures the bullet points are inside the container */
+  margin-left: 0; /* Removes any default margin */
+  padding-left: 0; /* Removes padding on the left */
+  text-align: left; /* Explicitly sets text alignment to left */
+}
+
+textarea {
+  width: 100%;               /* Sets the width to 100% of its container */
+  height: 150px;             /* Sets the height */
+  padding: 10px;             /* Adds padding inside the textarea */
+  font-family: Arial, sans-serif;  /* Sets the font style */
+  font-size: 16px;           /* Sets the font size */
+  color: #333;               /* Text color */
+  background-color: #f9f9f9; /* Background color */
+  border: 2px solid #ccc;    /* Border style */
+  border-radius: 5px;        /* Rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  resize: vertical;          /* Allows resizing vertically only */
+}
+
+textarea:focus {
+  border-color: #007bff;     /* Changes border color when focused */
+  outline: none;             /* Removes the default outline */
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5); /* Adds a glow effect on focus */
+}
+
+button {
+  background-color: #4d88b3;  /* Background color */
+  color: white;               /* Text color */
+  padding: 10px 20px;         /* Padding inside the button */
+  font-size: 16px;            /* Font size */
+  border: none;               /* Removes default border */
+  border-radius: 5px;         /* Rounded corners */
+  cursor: pointer;            /* Changes cursor to a pointer when hovering */
+}
+
+button:hover {
+  background-color: #b32400;  /* Changes background color on hover */
+}
