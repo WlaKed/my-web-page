@@ -1,9 +1,18 @@
-{% extends 'layout.html' %} {% block content %}
+{% extends 'layout.html' %}
+
+{% block content %}
 <div class="container">
   <h1>Text Analyzer</h1>
-  <br> 
-  <textarea rows = "20" cols = "50" > Write text or copy and paste text to analyse... </textarea>
   <br>
-  <button type="button">Click Me!</button>
+  
+  <!-- Form to submit the text for analysis -->
+  <form action="/analyze" method="POST">  <!-- Change action to /analyze -->
+    <textarea name="text_to_analyze" rows="20" cols="50" placeholder="Write text or copy and paste text to analyze..."></textarea>
+    <br><br>
+    <button type="submit">Process Text</button>
+  </form>
+  <br>
+  
+  <!-- The analysis results will be displayed in results.html, so no need to include them here -->
 </div>
 {% endblock %}

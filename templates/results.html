@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Display the analysis results -->
+<div class="container">
+<h3>Analysis Results</h3>
+<p><strong>Total Words:</strong> {{ analysis.total_words }}</p>
+<p><strong>Total Characters:</strong> {{ analysis.total_characters }}</p>
+<p><strong>Most Common Word:</strong> "{{ analysis.most_common_word[0] }}" ({{ analysis.most_common_word[1] }} times)</p> <!-- Update for correct access -->
+<br>
+<h3>Word Frequency Table</h3>
+<br>
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead> 
+    <tr>
+      <th>Word</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for word, count in analysis.word_frequencies %}
+    <tr>
+        <td>{{ word }}</td>
+        <td>{{ count }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<br>
+<a href="/text_analyzer">
+    <button type="submit">Go back</button>
+</a>
+
+</div>
+
+{% endblock %}

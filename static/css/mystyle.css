@@ -104,5 +104,36 @@ button {
 }
 
 button:hover {
-  background-color: #b32400;  /* Changes background color on hover */
+  background-color: green;  /* Changes background color on hover */
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;   /* Collapse borders for a cleaner look */
+}
+
+thead {
+  background-color: #4d88b3;  /* Blue background for header */
+  color: white;               /* White text for header */
+  text-transform: uppercase;   /* Capitalize all letters */
+}
+
+th, td {
+  text-align: center;         /* Center text in table cells */
+  padding: 15px;              /* Add padding for cell content */
+  border: 1px solid #ddd;     /* Light border around cells */
+}
+
+th {
+  color: white;               /* Ensure header text is white */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Light gray for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;     /* White background for odd rows */
+}
+
+
