@@ -24,6 +24,7 @@ def analyze():
     return render_template('results.html', analysis=analysis)
 
 def analyze_text(text):
+    text = text.lower()
     words = text.split()
     total_number_of_words = len(words)
     number_of_characters = len(text)
